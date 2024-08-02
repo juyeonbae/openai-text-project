@@ -14,7 +14,7 @@ const openaiApi = axios.create({
 const generateText = async (prompt) => {
   try {
     const response = await openaiApi.post('/completions', {
-      model: 'text-davinci-003',
+      model: 'gpt-4o-mini',
       prompt: prompt,
       max_tokens: 100,
     });
